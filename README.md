@@ -98,14 +98,14 @@ Example MCP client configuration:
   }
 }
 
-The client will:
+#The client will:
 - Connect to the MCP server
 - Request tool schemas
 - Invoke tools
 - Receive structured JSON responses
 
 
-Available Tools
+#Available Tools
 |  |  | 
 | outlook.send_mail |  | 
 | outlook.list_messages |  | 
@@ -116,8 +116,8 @@ Available Tools
 
 
 
-xample Tool Calls
-Outlook Example
+#**Example Tool Calls
+#Outlook Example
 {
   "tool": "outlook.send_mail",
   "input": {
@@ -139,7 +139,7 @@ Outlook Example
   }
 }
 
-Snowflake Example
+#Snowflake Example
 {
   "tool": "snowflake.query",
   "input": {
@@ -149,7 +149,7 @@ Snowflake Example
 
 
 
-📦 Deployment
+#****📦 Deployment
 Docker
 docker build -t mcp-server .
 docker run -p 8000:8000 --env-file .env mcp-server
@@ -160,14 +160,14 @@ Cloud Options
 - Azure Container Apps
 - Kubernetes
 
-📚 Logging
+#📚 Logging
 Centralized logging via utils/logger.py.
 Levels:
 - INFO — tool calls
 - DEBUG — request/response bodies
 - ERROR — exceptions
 
-🧭 Troubleshooting
+#🧭 Troubleshooting
 Missing Graph Permissions
 Ensure your Azure App Registration includes:
 - Mail.Read
@@ -176,18 +176,16 @@ Ensure your Azure App Registration includes:
 - Sites.Read.All
 - Chat.Read
 - Channel.ReadBasic.All
-Snowflake Errors
+
+#Snowflake Errors
 Verify:
 - Account identifier
 - Warehouse/database/schema
 - Network access rules
 
-📝 License
-Internal enterprise use unless otherwise specified.
-
 ---
 
-If you want, I can also generate:
+#If you want, I can also generate:
 
 - a **deep‑architecture version** with diagrams  
 - a **GitHub‑badged version**  
@@ -204,25 +202,25 @@ Just tell me the direction you want to take this.
   }
 }
 
-Deployment
-Docker
+#Deployment
+#Docker
 docker build -t mcp-server .
 docker run -p 8000:8000 --env-file .env mcp-server
 
 
-Cloud Options
+#Cloud Options
 - Azure App Service
 - Azure Container Apps
 - Kubernetes
 
-📚 Logging
+#📚 Logging
 Centralized logging via utils/logger.py.
 Levels:
 - INFO — tool calls
 - DEBUG — request/response bodies
 - ERROR — exceptions
 
-🧭 Troubleshooting
+#🧭 Troubleshooting
 Missing Graph Permissions
 Ensure your Azure App Registration includes:
 - Mail.Read
@@ -237,41 +235,7 @@ Verify:
 - Warehouse/database/schema
 - Network access rules
 
-📝 License
-Internal enterprise use unless otherwise specified.
-
----
-
-If you want, I can also generate:
-
-- a **deep‑architecture version** with diagrams  
-- a **GitHub‑badged version**  
-- a **multi‑file `/docs` folder**  
-- or a **whitepaper‑grade README** with full flows and code  
-
-Just tell me the direction you want to take this.
-
-
-
-
-docker build -t mcp-server .
-docker run -p 8000:8000 --env-file .env mcp-server
-
-Cloud Options
-- Azure App Service
-- Azure Container Apps
-- Kubernetes
-
-
- Logging
-Centralized logging via utils/logger.py.
-Levels:
-- INFO — tool calls
-- DEBUG — request/response bodies
-- ERROR — exceptions
-
-
-Troubleshooting
+#Troubleshooting
 Missing Graph Permissions
 Ensure your Azure App Registration includes:
 - Mail.Read
@@ -280,7 +244,7 @@ Ensure your Azure App Registration includes:
 - Sites.Read.All
 - Chat.Read
 - Channel.ReadBasic.All
-Snowflake Errors
+#Snowflake Errors
 Verify:
 - Account identifier
 - Warehouse/database/schema
