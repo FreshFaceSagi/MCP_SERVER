@@ -86,9 +86,9 @@ http://localhost:8000/docs
 
 ## 🧩 MCP Integration
 
-Example MCP client configuration:
+## Example MCP client configuration:
 
-```json
+json
 {
   "mcpServers": {
     "enterprise-mcp": {
@@ -98,14 +98,14 @@ Example MCP client configuration:
   }
 }
 
-#The client will:
+###The client will:
 - Connect to the MCP server
 - Request tool schemas
 - Invoke tools
 - Receive structured JSON responses
 
 
-#Available Tools
+###Available Tools
 |  |  | 
 | outlook.send_mail |  | 
 | outlook.list_messages |  | 
@@ -116,8 +116,8 @@ Example MCP client configuration:
 
 
 
-#**Example Tool Calls
-#Outlook Example
+###Example Tool Calls
+###Outlook Example
 {
   "tool": "outlook.send_mail",
   "input": {
@@ -139,7 +139,7 @@ Example MCP client configuration:
   }
 }
 
-#Snowflake Example
+###Snowflake Example
 {
   "tool": "snowflake.query",
   "input": {
@@ -149,25 +149,25 @@ Example MCP client configuration:
 
 
 
-#****📦 Deployment
+###📦 Deployment
 Docker
 docker build -t mcp-server .
 docker run -p 8000:8000 --env-file .env mcp-server
 
 
-Cloud Options
+###Cloud Options
 - Azure App Service
 - Azure Container Apps
 - Kubernetes
 
-#📚 Logging
+###📚 Logging
 Centralized logging via utils/logger.py.
 Levels:
 - INFO — tool calls
 - DEBUG — request/response bodies
 - ERROR — exceptions
 
-#🧭 Troubleshooting
+###🧭 Troubleshooting
 Missing Graph Permissions
 Ensure your Azure App Registration includes:
 - Mail.Read
@@ -177,7 +177,7 @@ Ensure your Azure App Registration includes:
 - Chat.Read
 - Channel.ReadBasic.All
 
-#Snowflake Errors
+###Snowflake Errors
 Verify:
 - Account identifier
 - Warehouse/database/schema
@@ -185,7 +185,7 @@ Verify:
 
 ---
 
-#If you want, I can also generate:
+###If you want, I can also generate:
 
 - a **deep‑architecture version** with diagrams  
 - a **GitHub‑badged version**  
@@ -202,25 +202,25 @@ Just tell me the direction you want to take this.
   }
 }
 
-#Deployment
-#Docker
+###Deployment
+###Docker
 docker build -t mcp-server .
 docker run -p 8000:8000 --env-file .env mcp-server
 
 
-#Cloud Options
+###Cloud Options
 - Azure App Service
 - Azure Container Apps
 - Kubernetes
 
-#📚 Logging
+###📚 Logging
 Centralized logging via utils/logger.py.
 Levels:
 - INFO — tool calls
 - DEBUG — request/response bodies
 - ERROR — exceptions
 
-#🧭 Troubleshooting
+###🧭 Troubleshooting
 Missing Graph Permissions
 Ensure your Azure App Registration includes:
 - Mail.Read
@@ -234,8 +234,8 @@ Verify:
 - Account identifier
 - Warehouse/database/schema
 - Network access rules
-
-#Troubleshooting
+- 
+###Troubleshooting
 Missing Graph Permissions
 Ensure your Azure App Registration includes:
 - Mail.Read
@@ -244,7 +244,8 @@ Ensure your Azure App Registration includes:
 - Sites.Read.All
 - Chat.Read
 - Channel.ReadBasic.All
-#Snowflake Errors
+- 
+###Snowflake Errors
 Verify:
 - Account identifier
 - Warehouse/database/schema
